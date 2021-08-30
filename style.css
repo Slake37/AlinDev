@@ -1,2 +1,161 @@
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Roboto', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #D1CDDC;
+}
+
+.container{
+   max-width: 1440px;
+   
+}
+
+.navigation{
+    width:100vw;
+    background: rgb(15,12,41);
+    background: linear-gradient(90deg, rgba(15,12,41,1) 0%, rgba(48,43,99,0.2049194677871149) 50%, rgba(36,36,62,1) 100%);
+}
+
+.navigation-links{
+    width:100vw;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    height:50vh;
+    background-color: #5f2b63;
+    
+}
+
+.close{
+    position: absolute;
+    top:25px;
+    right:25px;
+    color:#FFF2F2;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.navigation-links ul{
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation .navigation-links li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin:1rem;
+}
+
+.navigation .navigation-links a{
+    display: block;
+    text-decoration: none;
+    color:#FFF2F2;
+    transition: 0.5s ease all;
+}
+
+.navigation-links a:hover{
+    transform: translateY(-3px);
+    border-bottom: 1px solid #FFF2F2;
+    color:#D1CDDC;
+}
+
+.ham-menu{
+    background-color: rgba(250, 250, 250, 0.3);
+    padding:0.5rem;
+    border-radius: 25px;
+    position: absolute;
+    top:25px;
+    right:25px;
+}
+
+ .ham-menu span{
+    display: block;
+    width:2rem;
+    height: 2px;
+    background-color: #000;
+    margin:0.5rem;
+}
+
+.header {
+    background-image: url(./img/mohammad-rahmani-yRsBZJuhbkk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+}
+
+.hero{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:1rem;
+}
+
+.hero h2{
+    color:#FFF2F2;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.hero h1{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    color: #FFF2F2;
+    font-size: 3rem;
+    margin:3rem auto;
+}
+
+.hero form{
+    margin:2rem auto;
+    text-align: center;
+}
+
+.hero label{
+    color:#FFF2F2;
+}
+
+.hero input{
+    margin:0.5rem auto;
+    padding:0.2rem 0.3rem
+}
+
+.hero .submit{
+    border:none;
+    background: rgb(15,12,41);
+    background: linear-gradient(90deg, rgb(15,12,41) 0%, rgb(48,43,99) 50%, rgb(36,36,62) 100%);
+    color:#FFF2F2;
+    padding:0.2rem 0.8rem;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-group .btn{
+    font-size: 0.8rem;
+    display: block;
+    text-decoration: none;
+    color:#FFF2F2;
+    border:1px solid #FFF2F2;
+    border-radius: 5px;
+    padding:0.5rem 1rem;
+    margin:2rem 0.5rem;
+    transition: 0.5s ease all;
+}
+
+.btn-group .btn:hover{
+    background-color: #FFF2F2;
+    color:#5f2b63;
+    transform: translateY(-5px);
+}
