@@ -22,7 +22,7 @@ body{
 }
 
 .navigation-links{
-    z-index: 6;
+    z-index: 3;
     width:100vw;
     position: absolute;
     top: -100%;
@@ -81,7 +81,7 @@ body{
     cursor: pointer;
     padding:0.5rem;
     border-radius: 25px;
-    position: fixed;
+    position: absolute;
     top:25px;
     right:25px;
 }
