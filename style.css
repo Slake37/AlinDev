@@ -229,3 +229,40 @@ input:focus{
     font-family: 'Libre Franklin', sans-serif;
 }
 
+.about{
+    padding:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+
+.about img{
+    width:100%;
+    margin-top:2rem;
+    border:1px solid #FFF2F2;
+    border-radius: 50% 50% 0 0;
+    border-bottom: none;
+}
+
+.about-text{
+    border:1px solid #FFF2F2;
+    border-radius: 0 0 50% 0;
+    padding:2rem;
+    border-top:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1{
+    margin:1rem auto;
+    font-size: 1.5rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.about p{
+    font-size: 0.8rem;
+    line-height: 1.2;
+}
