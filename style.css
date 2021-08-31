@@ -96,12 +96,12 @@ body{
     background-image: url(./img/mohammad-rahmani-yRsBZJuhbkk-unsplash.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+   
 }
 
 .hero{
     width:100vw;
-    height:100vh;
+    min-height:80vh;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -114,6 +114,11 @@ body{
     font-size: 1.5rem;
     font-weight: 300;
     line-height:1.7;
+    
+}
+
+.hero:first-child{
+    margin-top: 20rem;
 }
 
 .hero h1{
@@ -170,3 +175,49 @@ body{
     color:#5f2b63;
     transform: translateY(-5px);
 }
+
+.portfolio{
+    padding:2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #060117;
+    color:#FFF2F2;
+}
+
+.portfolio-elements{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:2rem;
+}
+
+.portfolio-element{
+    text-align: center;
+}
+
+.portfolio-element img{
+    width:100%;
+    margin:2rem 0 1.5rem 0;
+}
+
+.portfolio-element a{
+    text-decoration: none;
+    color:#FFF2F2;
+    border:1px solid #FFF2F2;
+    padding:0.5rem 1rem;
+    margin:0.5rem 0;
+    transition: 0.5s ease all;
+}
+
+.portfolio-element a:hover{
+    background-color: #FFF2F2;
+    color:#5f2b63;
+    transform: translateY(-5px);
+}
+
+.portfolio h1{
+    font-size: 2rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
