@@ -11,7 +11,7 @@ body{
 
 .container{
    max-width: 1440px;
-   
+   overflow: hidden;
 }
 
 .navigation{
@@ -242,9 +242,10 @@ body{
 }
 
 .services{
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
-    gap:1rem;   
+    gap:1rem;
+    margin:auto;
 }
 
 .service-element{
@@ -252,7 +253,7 @@ body{
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    max-width: 20rem;
+    max-width: 25rem;
     margin:0 1rem;
     padding:0.5rem;
     border-radius: 10px;
@@ -283,3 +284,35 @@ body{
     margin:1rem 0 1rem 1rem;
     text-align: end;
 }
+
+.contact{
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:1.5rem;
+}
+
+.my-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+input{
+    margin:1rem 0;
+}
+
+.name, .email{
+    width:100%;
+    position: relative;
+}
+
+input::after{
+    content: 'Your name';
+    color:#060117;
+    position:absolute;
+}
+
