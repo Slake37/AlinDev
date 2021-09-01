@@ -3,6 +3,9 @@
     padding: 0;
    box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -305,14 +308,54 @@ input{
     margin:1rem 0;
 }
 
-.name, .email{
+.input{
     width:100%;
+    padding:0.2rem 0.2rem;
+    border:none;
+    background-color: #D1CDDC;
+    border-bottom: 1px solid #060117;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+
+
+.select-label{
+    transform: translateY(-150%);
+    color:rgba(36,36,62,0.5);
+    border:none;
+    font-size: 0.8rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.input-area-name, .input-area-email, .input-area-message{
+    position: relative;
+    width: 100%;
+}
+
+textarea{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    padding:1rem;
     position: relative;
 }
 
-input::after{
-    content: 'Your name';
-    color:#060117;
-    position:absolute;
+textarea:focus{
+    outline:none;
 }
+
+
+
+label{
+    position: absolute;
+    font-size: 1rem;
+    padding-left:10px;
+    top:50%;
+    transform: translateY(-50%);
+    transition: 0.5s ease all;
+}
+
 
