@@ -130,34 +130,8 @@ body{
     color: #FFF2F2;
     font-size: 3rem;
     margin:3rem auto;
-    line-height: 1.7;
-}
-
-.hero form{
-    margin:2rem auto;
-    text-align: center;
-}
-
-.hero label{
-    color:#FFF2F2;
-}
-
-.hero input{
-    margin:0.5rem auto;
-    padding:0.5rem 0.7rem;
-    border:none
-}
-
-input:focus{
-    outline: none;
-}
-
-.hero .submit{
-    border:none;
-    background: rgb(15,12,41);
-    background: linear-gradient(90deg, rgb(15,12,41) 0%, rgb(48,43,99) 50%, rgb(36,36,62) 100%);
-    color:#FFF2F2;
-    padding:0.5rem 1.2rem;
+    line-height: 1.8;
+    
 }
 
 .btn-group{
@@ -241,7 +215,7 @@ input:focus{
     width:100%;
     margin-top:2rem;
     border:1px solid #FFF2F2;
-    border-radius: 50% 50% 0 0;
+    border-radius: 0 50% 0 0;
     border-bottom: none;
 }
 
@@ -263,6 +237,49 @@ input:focus{
 }
 
 .about p{
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.2;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:1rem;   
+}
+
+.service-element{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    max-width: 20rem;
+    margin:0 1rem;
+    padding:0.5rem;
+    border-radius: 10px;
+    color:#060117;
+    border:3px solid #060117;
+    min-height:10rem;
+}
+
+.service-element:nth-child(odd){
+    background-color: #060117;
+    color:#FFF2F2;
+    border:3px solid #FFF2F2;
+}
+
+.service-element-title{
+    display:grid;
+    grid-template-columns: 11fr 1fr;
+    gap:0
+}
+
+.service-element-title h3{
+    font-size: 1.2rem;
+    margin:1rem 1rem 1rem 0;
+}
+
+.service-element-title i{
+    font-size: 1.2rem;
+    margin:1rem 0 1rem 1rem;
+    text-align: end;
 }
