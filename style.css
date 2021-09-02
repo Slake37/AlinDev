@@ -260,13 +260,13 @@ body{
     margin:0 1rem;
     padding:0.5rem;
     border-radius: 10px;
-    color:#060117;
-    border:3px solid #060117;
+    color:#5f2b63;
+    border:3px solid #5f2b63;
     min-height:10rem;
 }
 
 .service-element:nth-child(odd){
-    background-color: #060117;
+    background-color: #5f2b63;
     color:#FFF2F2;
     border:3px solid #FFF2F2;
 }
@@ -295,16 +295,22 @@ body{
     justify-content: flex-start;
     align-items: center;
     gap:1.5rem;
+    background-color: #060117;
+    color:#FFF2F2;
+    padding:2rem 0;
 }
+
+
 
 .my-form{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background-color: #060117;
-    color:#FFF2F2;
+   
+   
     width:100%;
+    padding:1rem;
 }
 
 input{
@@ -356,8 +362,6 @@ textarea:focus{
     background-color: #060117;
 }
 
-
-
 label{
     position: absolute;
     font-size: 1rem;
@@ -367,4 +371,65 @@ label{
     transition: 0.5s ease all;
 }
 
+.submit{
+    padding:0.5rem 2rem;
+    border:1px solid #D1CDDC;
+    background: transparent;
+    color:#D1CDDC;
+    font-weight:700;
+    transition:0.5s ease all;
+    margin:1rem 2rem;
+}
+
+.submit:hover{
+    background-color: #D1CDDC;
+    color:#060117
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:0.2rem 0 0.5rem 0;
+}
+
+.social-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0.5rem auto
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons a{
+    margin:0.5rem 0.5rem;
+    font-size: 1.2rem;
+    padding:0.2rem 0.4rem;
+    border-radius: 10px;
+    color:#D1CDDC;
+}
+
+.social-icons a:nth-child(1){
+    background-color:#4267B2;
+}
+
+.social-icons a:nth-child(2){
+    background-color:#8a3ab9;
+}
+
+.social-icons a:nth-child(3){
+    background-color: #171515;
+    
+}
+
+.footer p:nth-child(2){
+    opacity: 0.5;
+}
 
