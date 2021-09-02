@@ -28,7 +28,7 @@ body{
     z-index: 3;
     width:100vw;
     position: absolute;
-    top: -100%;
+    top: -200%;
     right: 0;
     height:50vh;
     background-color: #5f2b63;
@@ -302,6 +302,9 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    background-color: #060117;
+    color:#FFF2F2;
+    width:100%;
 }
 
 input{
@@ -312,8 +315,8 @@ input{
     width:100%;
     padding:0.2rem 0.2rem;
     border:none;
-    background-color: #D1CDDC;
-    border-bottom: 1px solid #060117;
+    background-color: #060117;
+    border-bottom: 1px solid #FFF2F2;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
 }
@@ -334,17 +337,23 @@ input{
 .input-area-name, .input-area-email, .input-area-message{
     position: relative;
     width: 100%;
+    margin-top: 1.5rem;
 }
 
 textarea{
+    width:100%;
     font-family: 'Roboto', sans-serif;
     font-size: 0.9rem;
     padding:1rem;
     position: relative;
+    background-color: #060117;
+    border:1px solid #D1CDDC;
+    color:#D1CDDC;
 }
 
 textarea:focus{
     outline:none;
+    background-color: #060117;
 }
 
 
