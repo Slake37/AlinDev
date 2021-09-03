@@ -552,3 +552,30 @@ label{
     }
 }
 
+@media screen and (min-width:1024px){
+    .portfolio-elements{
+        grid-template-columns: repeat(3, 1fr);
+        margin:2rem auto;
+        justify-content: center;
+        align-items: center;
+        min-height:50vh;
+    }
+
+    .portfolio-element{
+        width:50%;
+    }
+
+    .about{
+        width: 50%;
+      margin:1rem auto;
+    }
+
+    .services{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .my-form{
+        width:50%;
+    }
+}
+
